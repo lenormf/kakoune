@@ -1,0 +1,85 @@
+/* zenburn */
+
+code[theme="zenburn"] {
+    background-color: #3F3F3F;
+    color: #EFEFEF;
+}
+
+.zenburn-keyword {
+    color: #F0DFAF;
+    font-weight: bold;
+}
+
+.zenburn-number {
+    color: #8CD0D3;
+    font-weight: bold;
+}
+
+.zenburn-string {
+    color: #CC9393;
+}
+
+.zenburn-comment {
+    color: #7F9F7F;
+}
+
+.zenburn-preprocessor {
+    color: #CFBFAF;
+}
+
+/* base16 */
+
+code[theme="base16"] {
+    background-color: #2D2D2D;
+    color: #D8D8D8;
+}
+
+.base16-keyword {
+    color: #BA8BAF;
+    font-weight: bold;
+}
+
+.base16-number {
+    color: #DC9656;
+    font-weight: bold;
+}
+
+.base16-string {
+    color: #A1B56C;
+}
+
+.base16-comment {
+    color: #585858;
+}
+
+.base16-preprocessor {
+    color: #F7CA88;
+}
+
+/* github */
+code[theme="github"] {
+    background-color: #F8F8FF;
+    color: #121213;
+}
+
+.github-keyword {
+    color: #A71D5D;
+    font-weight: bold;
+}
+
+.github-number {
+    color: #0086B3;
+    font-weight: bold;
+}
+
+.github-string {
+    color: #183691;
+}
+
+.github-comment {
+    color: #AAAAAA;
+}
+
+.github-preprocessor {
+    color: #183691;
+}
