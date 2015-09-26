@@ -4,7 +4,7 @@
 }
 
 body {
-    padding-top: 260px;
+    padding-top: 300px;
 }
 
 @media (min-width: 768px) {
@@ -106,11 +106,6 @@ pre code {
 .panel-heading .panel-title a:focus,
 .panel-heading .panel-title a:hover {
     color: #f52500;
-}
-
-.panel-theme {
-    margin-left: 2.5%;
-    width: 30%;
 }
 
 .panel-theme,
