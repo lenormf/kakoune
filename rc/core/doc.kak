@@ -31,7 +31,7 @@ def -hidden -params 1..2 doc-open %{
 
 def -params 1..2 \
     -shell-candidates %{
-        find "${kak_runtime}/../doc/kak/manpages/" -type f -iname "*.gz" | while read l; do
+        ls -1 "${kak_runtime}"/../doc/kak/manpages/*.gz | while read l; do
             basename "${l%.*}"
         done
     } \
@@ -46,6 +46,27 @@ An optional keyword argument can be passed to the function, which will be automa
         else
             printf %s\\n "echo -color Error No such doc file: ${PATH_DOC}"
         fi
+    }
+}
+
+def -params 1..2 \
+    -shell-candidates %{
+        find "${kak_runtime}/../doc/kak/manpages/modules" -type f -name '*\.gz' | while read l; do
+            basename "${l%.*}"
+        done
+    } \
+    doc-module -docstring %{doc-module <topic> [<keyword>]: open a buffer containing documentation about a default module
+An optional keyword argument can be passed to the function, which will be automatically selected in the documentation} %{
+    %sh{
+        readonly PATH_DOC=$(find "${kak_runtime}/../doc/kak/manpages/modules" -type f -name "${1}\\.gz")
+
+        shift
+        if [ ! -f "${PATH_DOC}" ]; then
+            printf %s\\n "echo -color Error No such doc file: ${PATH_DOC}"
+            exit
+        fi
+
+        printf %s\\n "eval -try-client %opt{docsclient} doc-open ${PATH_DOC} $@"
     }
 }
 

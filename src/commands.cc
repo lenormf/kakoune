@@ -1033,6 +1033,10 @@ void define_command(const ParametersParser& parser, Context& context, const Shel
 
     auto docstring = parser.get_switch("docstring").value_or(StringView{});
 
+    if (!(flags & CommandFlags::Hidden))
+        ::fprintf(stderr, "[%s]\ntype=command\ndocstring:%s\n",
+            cmd_name.c_str(),
+            docstring.empty() ? "null" : replace(docstring, "\n", "\n ").c_str());
     cm.register_command(cmd_name, cmd, docstring.str(), desc, flags, CommandHelper{}, completer);
 }
 
@@ -1200,6 +1204,7 @@ const CommandDesc source_cmd = {
     {
         String path = real_path(parse_filename(parser[0]));
         String file_content = read_file(path, true);
+::fprintf(stderr, "%s\n", path.c_str());
         try
         {
             CommandManager::instance().execute(file_content, context,
@@ -1392,8 +1397,20 @@ const CommandDesc declare_option_cmd = {
         else
             throw runtime_error(format("unknown type {}", parser[0]));
 
-        if (parser.positional_count() == 3)
+        if (!(flags & OptionFlags::Hidden))
+            ::fprintf(stderr, "[%s]\ntype=option\nkaktype=%s\ndocstring:%s\n",
+                parser[1].c_str(),
+                parser[0].c_str(),
+                docstring.empty() ? "null" : replace(docstring, "\n", "\n ").c_str());
+
+        if (parser.positional_count() == 3) {
             opt->set_from_string(parser[2]);
+            if (!(flags & OptionFlags::Hidden))
+                ::fprintf(stderr, "default=%s\n", parser[2].c_str());
+        }
+
+        if (!(flags & OptionFlags::Hidden))
+            ::fprintf(stderr, "\n");
     }
 };
 
