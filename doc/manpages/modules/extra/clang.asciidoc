@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+clang - a
+
+Commands
+--------
+
+*jedi-enable-autocomplete*::
+....
+Add jedi completion candidates to the completer
+....

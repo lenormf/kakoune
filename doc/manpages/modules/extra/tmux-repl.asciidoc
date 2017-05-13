@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+tmux-repl - a
+
+Commands
+--------
+
+*ranger-open-on-edit-directory*::
+....
+Start the ranger file system explorer when trying to edit a directory
+....

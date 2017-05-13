@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+git-tools - a
+
+Options
+-------
+
+*clang_options* 'str'::
+	default 'null'
+....
+options to pass to the `clang` shell command
+....

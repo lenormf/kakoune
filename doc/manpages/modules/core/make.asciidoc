@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+make - a
+
+Commands
+--------
+
+*iterm-new-window*::
+....
+iterm-new-window [<arguments>]: create a new window
+All optional arguments are forwarded to the new kak client
+....

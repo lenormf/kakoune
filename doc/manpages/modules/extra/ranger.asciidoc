@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+ranger - a
+
+Commands
+--------
+
+*jedi-complete*::
+....
+Complete the current selection
+....

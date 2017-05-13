@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+lint - a
+
+Options
+-------
+
+*modelines* 'int'::
+	default '5'
+....
+amount of lines that will be checked at the beginning and the end of the buffer
+....

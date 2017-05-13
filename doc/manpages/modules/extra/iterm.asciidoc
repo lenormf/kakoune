@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+iterm - a
+
+Commands
+--------
+
+*moon-alternative-file*::
+....
+Jump to the alternate file (implementation ↔ test)
+....

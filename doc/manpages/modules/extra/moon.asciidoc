@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+moon - a
+
+Options
+-------
+
+*jedi_python_path* 'str-list'::
+	default 'null'
+....
+colon separated list of path added to `python`'s $PYTHONPATH environment variable
+....

@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+x11 - a
+
+Commands
+--------
+
+*clang-disable-autocomplete*::
+....
+Disable automatic clang completion
+....

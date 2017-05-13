@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+jedi - a
+
+Commands
+--------
+
+*x11-send-text*::
+....
+send the selected text to the repl window
+....

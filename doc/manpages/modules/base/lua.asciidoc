@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+lua - a
+
+Commands
+--------
+
+*iterm-new-vertical*::
+....
+Create a new vertical pane
+....

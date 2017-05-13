@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+modeline - a
+
+Commands
+--------
+
+*jedi-disable-autocomplete*::
+....
+Disable jedi completion
+....

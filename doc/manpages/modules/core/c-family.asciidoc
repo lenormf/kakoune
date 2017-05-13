@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+c-family - a
+
+Commands
+--------
+
+*iterm-new-horizontal*::
+....
+Create a new horizontal pane
+....

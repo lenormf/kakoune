@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+go-tools - a
+
+Commands
+--------
+
+*clang-parse*::
+....
+Parse the contents of the current buffer
+The syntaxic errors detected during parsing are shown when auto-diagnostics are enabled
+....

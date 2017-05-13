@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+autowrap - a
+
+Commands
+--------
+
+*modeline-parse*::
+....
+Read and interpret vi-format modelines at the beginning/end of the buffer
+....

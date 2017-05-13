@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+racer - a
+
+Commands
+--------
+
+*clang-complete*::
+....
+Complete the current selection
+....

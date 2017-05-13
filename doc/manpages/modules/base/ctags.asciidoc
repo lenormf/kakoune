@@ -1,0 +1,16 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+ctags - a
+
+Commands
+--------
+
+*clang-enable-diagnostics*::
+....
+Activate automatic error reporting and diagnostics
+Information about the analysis are showned after the buffer has been parsed with the clang-parse function
+....

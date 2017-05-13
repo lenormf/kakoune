@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+spell - a
+
+Commands
+--------
+
+*clang-diagnostics-next*::
+....
+Jump to the next line that contains an error
+....

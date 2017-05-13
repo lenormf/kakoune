@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+ruby - a
+
+Commands
+--------
+
+*clang-enable-autocomplete*::
+....
+Enable automatic clang completion
+....

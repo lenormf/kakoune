@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+editorconfig - a
+
+Commands
+--------
+
+*editorconfig-load*::
+....
+editorconfig-load [file]: set formatting behavior according to editorconfig
+....

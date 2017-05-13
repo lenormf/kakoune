@@ -1,0 +1,15 @@
+
+SCRIPT(k)
+=========
+
+NAME
+----
+tmux - a
+
+Commands
+--------
+
+*clang-disable-diagnostics*::
+....
+Disable automatic error reporting and diagnostics
+....
