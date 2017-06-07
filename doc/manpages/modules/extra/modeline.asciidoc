@@ -6,10 +6,19 @@ NAME
 ----
 modeline - a
 
+Options
+-------
+
+*modelines* 'int'::
+	default '5'
+....
+amount of lines that will be checked at the beginning and the end of the buffer
+....
+
 Commands
 --------
 
-*jedi-disable-autocomplete*::
+*modeline-parse*::
 ....
-Disable jedi completion
+Read and interpret vi-format modelines at the beginning/end of the buffer
 ....

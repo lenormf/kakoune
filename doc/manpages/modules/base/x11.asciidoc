@@ -6,10 +6,27 @@ NAME
 ----
 x11 - a
 
+Options
+-------
+
+*termcmd* 'str'::
+	default 'termite        -e'
+....
+shell command run to spawn a new terminal
+A shell command is appended to the one set in this option at runtime
+....
+
 Commands
 --------
 
-*clang-disable-autocomplete*::
+*x11-new*::
 ....
-Disable automatic clang completion
+x11-new [<command>]: create a new kak client for the current session
+The optional arguments will be passed as arguments to the new client
+....
+
+*x11-focus*::
+....
+x11-focus [<client>]: focus a given client's window
+If no client is passed, then the current client is used
 ....

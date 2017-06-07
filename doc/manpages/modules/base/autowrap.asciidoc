@@ -6,10 +6,38 @@ NAME
 ----
 autowrap - a
 
+Options
+-------
+
+*autowrap_column* 'int'::
+	default '80'
+....
+maximum amount of characters per line, after which a newline character will be inserted
+....
+
+*autowrap_format_paragraph* 'bool'::
+	default 'no'
+....
+when enabled, paragraph formatting will reformat the whole paragraph in which characters are being inserted
+This can potentially break formatting of documents containing markup (e.g. markdown)
+....
+
+*autowrap_fmtcmd* 'str'::
+	default 'fold -s -w %c'
+....
+command to which the paragraphs to wrap will be passed
+all occurences of '%c' are replaced with `autowrap_column`
+....
+
 Commands
 --------
 
-*modeline-parse*::
+*autowrap-enable*::
 ....
-Read and interpret vi-format modelines at the beginning/end of the buffer
+Automatically wrap the lines in which characters are inserted
+....
+
+*autowrap-disable*::
+....
+Disable automatic line wrapping
 ....

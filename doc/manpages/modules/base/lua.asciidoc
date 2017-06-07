@@ -9,7 +9,7 @@ lua - a
 Commands
 --------
 
-*iterm-new-vertical*::
+*lua-alternative-file*::
 ....
-Create a new vertical pane
+Jump to the alternate file (implementation ↔ test)
 ....

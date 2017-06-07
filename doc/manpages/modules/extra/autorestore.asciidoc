@@ -6,11 +6,29 @@ NAME
 ----
 autorestore - a
 
+Options
+-------
+
+*autorestore_purge_restored* 'bool'::
+	default 'true'
+....
+remove backups once they've been restored
+....
+
 Commands
 --------
 
-*ranger*::
+*autorestore-restore-buffer*::
 ....
-ranger [<arguments>]: open the file system explorer to select buffers to open
-All the optional arguments are forwarded to the ranger utility
+Restore the backup for the current file if it exists
+....
+
+*autorestore-purge-backups*::
+....
+Remove all the backups of the current buffer
+....
+
+*autorestore-disable*::
+....
+Disable automatic backup recovering
 ....

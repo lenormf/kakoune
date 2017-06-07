@@ -9,7 +9,17 @@ racer - a
 Commands
 --------
 
-*clang-complete*::
+*racer-complete*::
 ....
-Complete the current selection
+Complete the current selection with racer
+....
+
+*racer-enable-autocomplete*::
+....
+Add racer completion candidates to the completer
+....
+
+*racer-disable-autocomplete*::
+....
+Disable racer completion
 ....

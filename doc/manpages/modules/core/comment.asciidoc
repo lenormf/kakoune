@@ -6,10 +6,30 @@ NAME
 ----
 comment - a
 
+Options
+-------
+
+*comment_line* 'str'::
+	default '#'
+....
+characters inserted at the beginning of a commented line
+....
+
+*comment_block* 'str-list'::
+	default 'null'
+....
+colon separated tuple containing the characters inserted before/after a commented line
+....
+
 Commands
 --------
 
-*tmux-repl-horizontal*::
+*comment-block*::
 ....
-Create a new horizontal pane for repl interaction
+(un)comment selected lines using block comments
+....
+
+*comment-line*::
+....
+(un)comment selected lines using line comments
 ....

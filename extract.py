@@ -4,7 +4,7 @@ import os
 import ConfigParser
 
 FMT_HEADER = """
-SCRIPT(1)
+SCRIPT(k)
 =========
 
 NAME

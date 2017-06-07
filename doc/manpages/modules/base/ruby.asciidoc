@@ -9,7 +9,7 @@ ruby - a
 Commands
 --------
 
-*clang-enable-autocomplete*::
+*ruby-alternative-file*::
 ....
-Enable automatic clang completion
+Jump to the alternate file (implementation ↔ test)
 ....

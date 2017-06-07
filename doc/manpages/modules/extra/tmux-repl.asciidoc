@@ -9,7 +9,17 @@ tmux-repl - a
 Commands
 --------
 
-*ranger-open-on-edit-directory*::
+*tmux-repl-vertical*::
 ....
-Start the ranger file system explorer when trying to edit a directory
+Create a new vertical pane for repl interaction
+....
+
+*tmux-repl-horizontal*::
+....
+Create a new horizontal pane for repl interaction
+....
+
+*tmux-repl-window*::
+....
+Create a new window for repl interaction
 ....

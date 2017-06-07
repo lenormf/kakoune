@@ -9,8 +9,14 @@ doc - a
 Commands
 --------
 
-*iterm-new-tab*::
+*doc*::
 ....
-iterm-new-tab [<arguments>]: create a new tab
-All optional arguments are forwarded to the new kak client
+doc <topic> [<keyword>]: open a buffer containing documentation about a given topic
+An optional keyword argument can be passed to the function, which will be automatically selected in the documentation
+....
+
+*doc-module*::
+....
+doc-module <topic> [<keyword>]: open a buffer containing documentation about a default module
+An optional keyword argument can be passed to the function, which will be automatically selected in the documentation
 ....

@@ -17,9 +17,9 @@ sources := $(sort $(wildcard *.cc))
 objects := $(addprefix ., $(sources:.cc=$(suffix).o))
 deps := $(addprefix ., $(sources:.cc=$(suffix).d))
 docs := $(wildcard ../doc/manpages/*.asciidoc)
-docs += $(wildcard ../doc/manpages/scripts/core/*.asciidoc)
-docs += $(wildcard ../doc/manpages/scripts/base/*.asciidoc)
-docs += $(wildcard ../doc/manpages/scripts/extra/*.asciidoc)
+docs += $(wildcard ../doc/manpages/modules/core/*.asciidoc)
+docs += $(wildcard ../doc/manpages/modules/base/*.asciidoc)
+docs += $(wildcard ../doc/manpages/modules/extra/*.asciidoc)
 mandocs := $(docs:.asciidoc=.gz)
 
 PREFIX ?= /usr/local

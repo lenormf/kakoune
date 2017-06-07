@@ -6,10 +6,42 @@ NAME
 ----
 grep - a
 
+Options
+-------
+
+*toolsclient* 'str'::
+	default 'null'
+....
+name of the client in which utilities display information
+....
+
+*jumpclient* 'str'::
+	default 'null'
+....
+name of the client in which all source code jumps will be executed
+....
+
+*grepcmd* 'str'::
+	default 'grep -RHn'
+....
+shell command run to search for subtext in a file/directory
+....
+
 Commands
 --------
 
-*tmux-repl-vertical*::
+*grep*::
 ....
-Create a new vertical pane for repl interaction
+grep [<arguments>]: grep utility wrapper
+All the optional arguments are forwarded to the grep utility
+....
+
+*grep-next*::
+....
+Jump to the next grep match
+....
+
+*grep-prev*::
+....
+Jump to the previous grep match
 ....

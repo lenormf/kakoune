@@ -6,10 +6,51 @@ NAME
 ----
 clang - a
 
+Options
+-------
+
+*clang_options* 'str'::
+	default 'null'
+....
+options to pass to the `clang` shell command
+....
+
 Commands
 --------
 
-*jedi-enable-autocomplete*::
+*clang-parse*::
 ....
-Add jedi completion candidates to the completer
+Parse the contents of the current buffer
+The syntaxic errors detected during parsing are shown when auto-diagnostics are enabled
+....
+
+*clang-complete*::
+....
+Complete the current selection
+....
+
+*clang-enable-autocomplete*::
+....
+Enable automatic clang completion
+....
+
+*clang-disable-autocomplete*::
+....
+Disable automatic clang completion
+....
+
+*clang-enable-diagnostics*::
+....
+Activate automatic error reporting and diagnostics
+Information about the analysis are showned after the buffer has been parsed with the clang-parse function
+....
+
+*clang-disable-diagnostics*::
+....
+Disable automatic error reporting and diagnostics
+....
+
+*clang-diagnostics-next*::
+....
+Jump to the next line that contains an error
 ....

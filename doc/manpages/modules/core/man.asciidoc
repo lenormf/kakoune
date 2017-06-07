@@ -6,11 +6,21 @@ NAME
 ----
 man - a
 
+Options
+-------
+
+*docsclient* 'str'::
+	default 'null'
+....
+name of the client in which documentation is to be displayed
+....
+
 Commands
 --------
 
-*iterm-focus*::
+*man*::
 ....
-iterm-focus [<client>]: focus the given client
-If no client is passed then the current one is used
+man [<page>]: manpage viewer wrapper
+If no argument is passed to the command, the selection will be used as page
+The page can be a word, or a word directly followed by a section number between parenthesis, e.g. kak(1)
 ....

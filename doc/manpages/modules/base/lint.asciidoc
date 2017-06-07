@@ -9,8 +9,38 @@ lint - a
 Options
 -------
 
-*modelines* 'int'::
-	default '5'
+*lintcmd* 'str'::
+	default 'null'
 ....
-amount of lines that will be checked at the beginning and the end of the buffer
+shell command to which the path of a copy of the current buffer will be passed
+The output returned by this command is expected to comply with the following format:
+{filename}:{line}:{column}: {kind}: {message}
+....
+
+Commands
+--------
+
+*lint*::
+....
+Parse the current buffer with a linter
+....
+
+*lint-enable*::
+....
+Activate automatic diagnostics of the code
+....
+
+*lint-disable*::
+....
+Disable automatic diagnostics of the code
+....
+
+*lint-next*::
+....
+Jump to the next line that contains an error
+....
+
+*lint-prev*::
+....
+Jump to the previous line that contains an error
 ....

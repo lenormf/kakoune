@@ -6,11 +6,36 @@ NAME
 ----
 make - a
 
+Options
+-------
+
+*makecmd* 'str'::
+	default 'make'
+....
+shell command run to build the project
+....
+
+*make_error_pattern* 'str'::
+	default '(?:fatal )?error:'
+....
+pattern that describes lines containing information about errors in the output of the `makecmd` command
+....
+
 Commands
 --------
 
-*iterm-new-window*::
+*make*::
 ....
-iterm-new-window [<arguments>]: create a new window
-All optional arguments are forwarded to the new kak client
+make [<arguments>]: make utility wrapper
+All the optional arguments are forwarded to the make utility
+....
+
+*make-next*::
+....
+Jump to the next make error
+....
+
+*make-prev*::
+....
+Jump to the previous make error
 ....

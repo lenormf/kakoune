@@ -6,10 +6,28 @@ NAME
 ----
 c-family - a
 
+Options
+-------
+
+*c_include_guard_style* 'str'::
+	default 'ifdef'
+....
+control the type of include guard to be inserted in empty headers
+Can be one of the following:
+ifdef: old style ifndef/define guard
+pragma: newer type of guard using "pragma once"
+....
+
+*alt_dirs* 'str-list'::
+	default '.:..'
+....
+semi-colon separated list of path in which header files will be looked for
+....
+
 Commands
 --------
 
-*iterm-new-horizontal*::
+*c-family-alternative-file*::
 ....
-Create a new horizontal pane
+Jump to the alternate file (header/implementation)
 ....

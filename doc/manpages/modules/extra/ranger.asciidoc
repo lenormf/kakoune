@@ -9,7 +9,13 @@ ranger - a
 Commands
 --------
 
-*jedi-complete*::
+*ranger-open-on-edit-directory*::
 ....
-Complete the current selection
+Start the ranger file system explorer when trying to edit a directory
+....
+
+*ranger*::
+....
+ranger [<arguments>]: open the file system explorer to select buffers to open
+All the optional arguments are forwarded to the ranger utility
 ....
