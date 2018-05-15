@@ -1001,6 +1001,13 @@ public:
             push_mode(new Normal(context().input_handler(), true));
             return;
         }
+        else if (key == ctrl('f'))
+        {
+            m_line_editor.insert(m_empty_text);
+            display();
+            m_line_changed = true;
+            m_refresh_completion_pending = true;
+        }
         else
         {
             if (key == ' ' and

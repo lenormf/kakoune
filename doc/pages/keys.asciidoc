@@ -810,6 +810,8 @@ The following keys are recognized by this mode to help with editing
 
     *w*:::
         explicit word completion (from current buffer)
+*<c-f>*::
+    insert the default value for this prompt
 
 *<c-o>*::
     toggle automatic completion
