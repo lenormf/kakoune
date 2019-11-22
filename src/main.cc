@@ -326,7 +326,7 @@ static const EnvVarDesc builtin_env_vars[] = { {
     }, {
         "user_modes", false,
         [](StringView name, const Context& context) -> Vector<String>
-        { return context.keymaps().user_modes(); }
+        { return context.keymaps().user_modes() | transform(&KeymapManager::UserMode::name) | gather<Vector<String>>(); }
     }, {
         "window_range", false,
         [](StringView name, const Context& context) -> Vector<String>
